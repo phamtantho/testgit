@@ -51,8 +51,8 @@ Test4
     Input Text    name=q    robot framework
     Press Key    name=q    ENTER
     #Wait Until Page Contains Element    css=#rso > div:nth-child(1) > div > div:nth-child(1) > div > div > div.r > a > h3    10s
-    Sleep   3s
-    Click Link    Robot Framework
+    #Sleep   3s
+    #Click Link    Robot Framework
     Log To Console    Successfully opened page
 
 Test5
@@ -62,6 +62,6 @@ Test5
     Input Text    name=q    robot framework
     Press Key    name=q    ENTER
     #Wait Until Page Contains Element    css=#rso > div:nth-child(1) > div > div:nth-child(1) > div > div > div.r > a > h3    10s
-    Sleep   3s
-    Click Link    Robot Framework
+    #Sleep   3s
+    #Click Link    Robot Framework
     Log To Console    Successfully opened page
