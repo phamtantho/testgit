@@ -50,7 +50,8 @@ Test4
     Open Browser    https://www.google.com/    chrome   remote_url=${remote_url}
     Input Text    name=q    robot framework
     Press Key    name=q    ENTER
-    Wait Until Page Contains Element    css=#rso > div:nth-child(1) > div > div:nth-child(1) > div > div > div.r > a > h3    10s
+    #Wait Until Page Contains Element    css=#rso > div:nth-child(1) > div > div:nth-child(1) > div > div > div.r > a > h3    10s
+    Sleep   3s
     Click Link    Robot Framework
     Log To Console    Successfully opened page
 
@@ -60,6 +61,7 @@ Test5
     Open Browser    https://www.google.com/    firefox          remote_url=${remote_url}
     Input Text    name=q    robot framework
     Press Key    name=q    ENTER
-    Wait Until Page Contains Element    css=#rso > div:nth-child(1) > div > div:nth-child(1) > div > div > div.r > a > h3    10s
+    #Wait Until Page Contains Element    css=#rso > div:nth-child(1) > div > div:nth-child(1) > div > div > div.r > a > h3    10s
+    Sleep   3s
     Click Link    Robot Framework
     Log To Console    Successfully opened page
