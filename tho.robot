@@ -3,7 +3,7 @@ Test Teardown     Close Browser
 Library           SeleniumLibrary
 
 *** Variables ***
-${remote_url}   http://10.10.2.1.118:4444/wd/hub
+${remote_url}   http://10.102.1.118:4444/wd/hub
 ${desired_caps}    
 
 *** Test Cases ***
