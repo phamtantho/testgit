@@ -4,13 +4,20 @@ Library           SeleniumLibrary
 
 *** Variables ***
 ${remote_url}   http://10.102.1.118:4444/wd/hub
-${desired_caps}    
+
+${CAP_WINDOWS}    platform:WINDOWS
+${CAP_MAC}        platform:MAC
+
+${CAP_CHROME}    browserName:chrome
+${CAP_FIREFOX}   browserName:firefox
+${CAP_EDGE}      browserName:MicrosoftEdge 
+${CAP_SAFARI}    browserName:safari
 
 *** Test Cases ***
 Test1
     [Documentation]    User can register an account
     [Tags]    Register_an_account
-    Open Browser    http://demo.guru99.com/test/newtours/index.php     chrome   remote_url=${remote_url}
+    Open Browser    http://demo.guru99.com/test/newtours/index.php     chrome   remote_url=${remote_url}    ${CAP_MAC},${CAP_CHROME}
     Title Should Be    Welcome: Mercury Tours
     #Maximize Browser Window
     #Log To Console    Register an account
