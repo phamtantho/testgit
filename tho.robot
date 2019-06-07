@@ -82,7 +82,7 @@ Test6
     Maximize Browser Window
     Log To Console    Register an account
     Click Element    link=REGISTER
-    Input Text    name=firstName1    Tho
+    Input Text    name=firstName    Tho
     Input Text    name=lastName    Pham
     Input Text    name=phone    0908224292
     Input Text    id=userName    pttho@tma.com.vn
