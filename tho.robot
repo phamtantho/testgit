@@ -58,7 +58,7 @@ Test3
 Test4
     [Tags]    sanity   win   edge
     Log To Console    Open page https://www.google.com/ with browser edge
-    Open Browser    https://www.google.com/    browser=edge   remote_url=${remote_url}    desired_capabilities=${CAP_WINDOWS},${CAP_EDGE}
+    Open Browser    https://www.google.com/    browser=chrome   remote_url=${remote_url}    desired_capabilities=${CAP_WINDOWS},${CAP_CHROME}
     Input Text    name=q    robot framework
     Press Key    name=q    \\13
 	Wait Until Page Contains Element    link=Robot Framework   10s
