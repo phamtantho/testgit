@@ -18,7 +18,7 @@ Test1
     Open Browser    http://demo.guru99.com/test/newtours/index.php     browser=chrome   remote_url=${remote_url}    desired_capabilities=${CAP_WINDOWS},${CAP_CHROME}
     Title Should Be    Welcome: Mercury Tours
     Maximize Browser Window
-    Log To Console    Register an account
+    Log To Console    Register an account with chrome
     Click Element    link=REGISTER
     Input Text    name=firstName    Tho
     Input Text    name=lastName    Pham
