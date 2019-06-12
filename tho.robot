@@ -46,36 +46,16 @@ Test2
     Log To Console   Successfully opened page
 	
 Test3
-    [Tags]    sanity   win    firefox
-    Log To Console    Open page https://www.google.com/ with browser firefox
-    Open Browser    https://www.google.com/    browser=firefox  remote_url=${remote_url}    desired_capabilities=${CAP_WINDOWS},${CAP_FIREFOX}
-    Input Text    name=q    robot framework
-    Press Key    name=q    \\13
-	Wait Until Page Contains Element    link=Robot Framework   10s
-	Click Link    link=Robot Framework
-    Log To Console   Successfully opened page
-	
-Test4
     [Tags]    sanity   win   edge
     Log To Console    Open page https://www.google.com/ with browser edge
-    Open Browser    https://www.google.com/    browser=chrome   remote_url=${remote_url}    desired_capabilities=${CAP_WINDOWS},${CAP_CHROME}
+    Open Browser    https://www.google.com/    browser=edge   remote_url=${remote_url}    desired_capabilities=${CAP_WINDOWS},${CAP_EDGE}
     Input Text    name=q    robot framework
     Press Key    name=q    \\13
     Wait Until Page Contains Element    link=Robot Framework   10s
     Click Link    link=Robot Framework
     Log To Console    Successfully opened page
 	
-Test5
-    [Tags]    sanity   win   chrome
-    Log To Console    Open page https://www.google.com/ with browser chrome
-    Open Browser    https://www.google.com/    browser=chrome          remote_url=${remote_url}     desired_capabilities=${CAP_WINDOWS},${CAP_CHROME}
-    Input Text    name=q    robot framework
-    Press Key    name=q    \\13
-	Wait Until Page Contains Element    link=Robot Framework   10s
-	Click Link    link=Robot Framework
-    Log To Console   Successfully opened page
-	
-Test6
+Test4
     [Tags]    sanity   mac   chrome
     Open Browser    http://demo.guru99.com/test/newtours/index.php     browser=chrome   remote_url=${remote_url}    desired_capabilities=${CAP_MAC},${CAP_CHROME}
     Title Should Be    Welcome: Mercury Tours
@@ -97,7 +77,7 @@ Test6
     Click Button    name=submit
     Wait Until Page Contains    Thank you for registering    10s
 	
-Test7
+Test5
     [Tags]    sanity   mac   firefox
     Log To Console    Open page https://www.google.com/ with browser firefox
     Open Browser    https://www.google.com/    browser=firefox   remote_url=${remote_url}   desired_capabilities=${CAP_MAC},${CAP_FIREFOX}
@@ -107,17 +87,7 @@ Test7
 	Click Link    link=Robot Framework
     Log To Console   Successfully opened page
 	
-Test8
-    [Tags]    sanity   mac    firefox
-    Log To Console    Open page https://www.google.com/ with browser firefox
-    Open Browser    https://www.google.com/    browser=firefox  remote_url=${remote_url}    desired_capabilities=${CAP_MAC},${CAP_FIREFOX}
-    Input Text    name=q    robot framework
-    Press Key    name=q    \\13
-    Wait Until Page Contains Element    link=Robot Framework   10s
-    Click Link    link=Robot Framework
-    Log To Console   Successfully opened page
-	
-Test9
+Test6
     [Tags]    sanity   mac   safari
     Log To Console    Open page https://www.google.com/ with browser safari
     Open Browser    https://www.google.com/    browser=safari   remote_url=${remote_url}    desired_capabilities=${CAP_MAC},${CAP_SAFARI}
@@ -126,13 +96,3 @@ Test9
 	Wait Until Page Contains Element    link=Robot Framework   10s
 	Click Link    link=Robot Framework
     Log To Console    Successfully opened page
-	
-Test10
-    [Tags]    sanity   mac   chrome
-    Log To Console    Open page https://www.google.com/ with browser chrome
-    Open Browser    https://www.google.com/    browser=chrome          remote_url=${remote_url}     desired_capabilities=${CAP_MAC},${CAP_CHROME}
-    Input Text    name=q    robot framework
-    Press Key    name=q    \\13
-    Wait Until Page Contains Element    link=Robot Framework   10s
-    Click Link    link=Robot Framework
-    Log To Console   Successfully opened page
